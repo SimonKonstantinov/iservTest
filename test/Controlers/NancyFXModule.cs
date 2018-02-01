@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Web;
+using System.Xml;
 using Nancy;
-using Nancy.ModelBinding;
+
 
 namespace nancyfx.Modules
 
@@ -13,6 +10,7 @@ namespace nancyfx.Modules
     public class NancyFXModule : NancyModule
     {
 
+        
         public NancyFXModule()
         {
             Get["/Upload"] = param => View["Upload.html"];
@@ -25,19 +23,25 @@ namespace nancyfx.Modules
                 var length = this.Request.Body.Length;
                 var data = new byte[length];
                 id.Read(data, 0, (int)length);
-                string body = System.Text.Encoding.Default.GetString(data);
-                //   var xml = body.IndexOf('<');
+              string body = System.Text.Encoding.Default.GetString(data);
+
+
                 body = body.Substring(body.IndexOf('<'));
-                body = body.Remove(body.LastIndexOf('>')+1);
+                body = body.Remove(body.LastIndexOf('>') + 1);
 
-                //string pattern = @"^< ";
-                //string target = " ";
-                //body = body.Replace("------WebKitFormBoundarySH6HZJ5OdTcNVrdb Content - Disposition: form - data; name = 'file'; filename = '2017-12-12_13-06-36_0300_34744732.xml'", "");
-                //Regex regex = new Regex(@"^<", RegexOptions.Multiline );
-                //string result = regex.Replace(body,"");
+                System.IO.File.WriteAllText(@"C:\Users\skons\Source\Repos\iservTest\test\Files\data.xml", body);
+                XmlDocument xDoc = new XmlDocument();
+                xDoc.Load(@"C:\Users\skons\Source\Repos\iservTest\test\Files\data.xml");
+                XmlElement xRoot = xDoc.DocumentElement;
 
+                // выбор всех дочерних узлов
+                XmlNodeList childnodes = xRoot.SelectNodes("//rates");
+                foreach (XmlNode n in childnodes)
+                {
 
-                return Response.AsXml(body);
+                }
+
+                return Response.AsXml(childnodes);
 
 
             };

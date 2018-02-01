@@ -1,8 +1,5 @@
-﻿------WebKitFormBoundarySH6HZJ5OdTcNVrdb
-Content-Disposition: form-data; name="file"; filename="2017-12-12_13-06-36_0300_34744732.xml"
-Content-Type: text/xml
-
-<?xml version="1.0" encoding="UTF-8"?><mkgu:body ID="mkgu" xmlns:mkgu="http://vashkontrol.ru#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mkgu:body ID="mkgu" xmlns:mkgu="http://vashkontrol.ru#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#">
   <vendor id="1360">
     <form-version>0.0.2</form-version>
   </vendor>
@@ -42,4 +39,3 @@ Content-Type: text/xml
     <SignatureValue>wFqXFUkJdp+3O0Y81ia5VpbD5lSk+hP30G4IMWbSKzcsQTQEVGqQ28q1vgw9lG3wK6dQ619eJIp/s2lH3owJSsELui4l7KsWgozAdEi2CABP7eUpsiY2A8u5MGgBLZRKlcX1CKiXMx9gVWQ0IC7IaFqvuxHgq4Z3tWuiuxMibO9VrM2X2XGk8Zwe6JzmwqKhynu1LiP0DlnhJxAcNzIFBBZRxOCjvjFTqa3B86bxSOe/8pGPVIfCy+QXEP7L8dbULEF2A5C2ZPkrTKcBodpTJ1x3Uw2uUyRn2/bBrY3fUPuHPVkIwGsh64CrHDs+rJPo1GU+u0s+K/yRZqJrUhbvUA==</SignatureValue>
   </Signature>
 </mkgu:body>
-------WebKitFormBoundarySH6HZJ5OdTcNVrdb--

@@ -118,10 +118,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlers\Class1.cs" />
     <Compile Include="Controlers\NancyFXModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Files\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
