@@ -114,18 +114,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data.xml" />
+    <Content Include="Views\View.html" />
     <Content Include="Views\Upload.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlers\Class1.cs" />
+    <Compile Include="Controlers\XMLnode.cs" />
     <Compile Include="Controlers\NancyFXModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Files\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Default\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

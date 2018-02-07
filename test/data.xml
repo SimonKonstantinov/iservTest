@@ -1,41 +1,90 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<mkgu:body ID="mkgu" xmlns:mkgu="http://vashkontrol.ru#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#">
-  <vendor id="1360">
-    <form-version>0.0.2</form-version>
-  </vendor>
-  <forms>
-    <form mkgu-id="0" foreign-id="ticket-department-252-2017-12-12--0">
-      <data>
-        <user id="ticket-department-252-2017-12-12--0"/>
-        <service id="10000008589">Р—Р°РіСЂР°РЅРїР°СЃРїРѕСЂС‚</service>
-        <procedure/>
-        <authority id="10001298922"/>
-        <date>2017-12-11 18:00:00</date>
-        <received-date>2017-12-12 07:42:31</received-date>
-        <okato>53401373000</okato>
-      </data>
-      <rates>
-        <rate indicator-id="9" value-id="45">45</rate>
-        <rate indicator-id="10" value-id="49">49</rate>
-        <rate indicator-id="11" value-id="55">55</rate>
-        <rate indicator-id="12" value-id="60">60</rate>
-        <rate indicator-id="13" value-id="65">65</rate>
-      </rates>
-    </form>
-  </forms>
-  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-    <SignedInfo>
-      <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
-      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-      <Reference URI="#mkgu">
-        <Transforms>
-          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-          <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
-        </Transforms>
-        <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-        <DigestValue>Q3YRXOJFg/OwoL2A+sng4b97LF6YRgPIOQ4BX/lCvkk=</DigestValue>
-      </Reference>
-    </SignedInfo>
-    <SignatureValue>wFqXFUkJdp+3O0Y81ia5VpbD5lSk+hP30G4IMWbSKzcsQTQEVGqQ28q1vgw9lG3wK6dQ619eJIp/s2lH3owJSsELui4l7KsWgozAdEi2CABP7eUpsiY2A8u5MGgBLZRKlcX1CKiXMx9gVWQ0IC7IaFqvuxHgq4Z3tWuiuxMibO9VrM2X2XGk8Zwe6JzmwqKhynu1LiP0DlnhJxAcNzIFBBZRxOCjvjFTqa3B86bxSOe/8pGPVIfCy+QXEP7L8dbULEF2A5C2ZPkrTKcBodpTJ1x3Uw2uUyRn2/bBrY3fUPuHPVkIwGsh64CrHDs+rJPo1GU+u0s+K/yRZqJrUhbvUA==</SignatureValue>
-  </Signature>
+
+-<mkgu:body xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:mkgu="http://vashkontrol.ru#" ID="mkgu">
+
+
+-<vendor id="1360">
+
+<form-version>0.0.2</form-version>
+
+</vendor>
+
+
+-<forms>
+
+
+-<form foreign-id="ticket-department-252-2017-12-12--0" mkgu-id="0">
+
+
+-<data>
+
+<user id="ticket-department-252-2017-12-12--0"/>
+
+<service id="10000008589">Загранпаспорт</service>
+
+<procedure/>
+
+<authority id="10001298922"/>
+
+<date>2017-12-11 18:00:00</date>
+
+<received-date>2017-12-12 07:42:31</received-date>
+
+<okato>53401373000</okato>
+
+</data>
+
+
+-<rates>
+
+<rate value-id="45" indicator-id="9">45</rate>
+
+<rate value-id="49" indicator-id="10">49</rate>
+
+<rate value-id="55" indicator-id="11">55</rate>
+
+<rate value-id="60" indicator-id="12">60</rate>
+
+<rate value-id="65" indicator-id="13">65</rate>
+
+</rates>
+
+</form>
+
+</forms>
+
+
+-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+
+
+-<SignedInfo>
+
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+
+
+-<Reference URI="#mkgu">
+
+
+-<Transforms>
+
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+
+<Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+
+</Transforms>
+
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+
+<DigestValue>Q3YRXOJFg/OwoL2A+sng4b97LF6YRgPIOQ4BX/lCvkk=</DigestValue>
+
+</Reference>
+
+</SignedInfo>
+
+<SignatureValue>wFqXFUkJdp+3O0Y81ia5VpbD5lSk+hP30G4IMWbSKzcsQTQEVGqQ28q1vgw9lG3wK6dQ619eJIp/s2lH3owJSsELui4l7KsWgozAdEi2CABP7eUpsiY2A8u5MGgBLZRKlcX1CKiXMx9gVWQ0IC7IaFqvuxHgq4Z3tWuiuxMibO9VrM2X2XGk8Zwe6JzmwqKhynu1LiP0DlnhJxAcNzIFBBZRxOCjvjFTqa3B86bxSOe/8pGPVIfCy+QXEP7L8dbULEF2A5C2ZPkrTKcBodpTJ1x3Uw2uUyRn2/bBrY3fUPuHPVkIwGsh64CrHDs+rJPo1GU+u0s+K/yRZqJrUhbvUA==</SignatureValue>
+
+</Signature>
+
 </mkgu:body>

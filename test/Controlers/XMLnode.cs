@@ -5,7 +5,7 @@ using System.Web;
 
 namespace test.Controlers
 {
-    public class Class1
+    public class ParseXMLReqest
     {
     }
 }
