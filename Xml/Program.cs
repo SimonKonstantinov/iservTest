@@ -26,19 +26,27 @@ namespace Xml
 
             List<string> XmLList = new List<string>();
             {
-                XmLList.Add((xRoot.SelectSingleNode("//user/@id").Value));
+                // XmLList.Add((xRoot.SelectSingleNode("//user/@id").Value));
 
-                XmLList.Add(Convert.ToString(xRoot.SelectSingleNode("//service/@id").Value));
+                // XmLList.Add(Convert.ToString(xRoot.SelectSingleNode("//service/@id").Value));
 
-                XmLList.Add(Convert.ToString(xRoot.SelectSingleNode("//service").InnerText));        
-                XmLList.Add((xRoot.SelectSingleNode(("//date")).InnerText));
-                XmLList.Add((xRoot.SelectSingleNode("//data/received-date").InnerText));
-               XmLList.Add(xRoot.SelectSingleNode("//okato").InnerText);
-
+                // XmLList.Add(Convert.ToString(xRoot.SelectSingleNode("//service").InnerText));        
+                // XmLList.Add((xRoot.SelectSingleNode(("//date")).InnerText));
+                // XmLList.Add((xRoot.SelectSingleNode("//data/received-date").InnerText));
+                //XmLList.Add(xRoot.SelectSingleNode("//okato").InnerText);
+                XmlNodeList childnodes = xRoot.SelectNodes("//rate");
+                foreach (XmlNode n in childnodes)
+                {
+                    //if ()
+                    //{
+                        XmLList.Add(n.InnerText );
+                    //}
+                }
+                    
             };
             foreach (string i in XmLList)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(i.ToString());
             }
         }
     }

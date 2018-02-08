@@ -114,8 +114,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data.xml" />
-    <Content Include="Views\View.html" />
+    <Content Include="Views\Error.html" />
+    <Content Include="Views\ViewData.html" />
     <Content Include="Views\Upload.html" />
+    <Content Include="Views\ViewRates.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
