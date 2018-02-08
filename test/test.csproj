@@ -117,11 +117,9 @@
     <Content Include="Views\Error.html" />
     <Content Include="Views\ViewData.html" />
     <Content Include="Views\Upload.html" />
-    <Content Include="Views\ViewRates.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlers\XMLnode.cs" />
     <Compile Include="Controlers\NancyFXModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
